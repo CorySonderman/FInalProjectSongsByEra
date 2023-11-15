@@ -1,0 +1,29 @@
+﻿<!--
+    This view displays details of a single song.
+    Key Points:
+    - Displays song details.
+    - Includes a link to update the song.
+-->
+@model SongsFrom1950
+
+<h3>@Model.Title Information</h3>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Artist</th>
+        <th>Genre</th>
+        <th>Year Released</th>
+    </tr>
+    <tr>
+        <td>@Model.ID</td>
+        <td>@Model.Title</td>
+        <td>@Model.Artist</td>
+        <td>@Model.Genre</td>
+        <td>@Model.YearReleased</td>
+    </tr>
+</table>
+<div style="display: block">
+    <a href="/SongsFrom1950/UpdateSong/@Model.ID">Update this Song</a>
+</div>

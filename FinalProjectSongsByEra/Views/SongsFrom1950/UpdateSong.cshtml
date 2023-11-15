@@ -1,0 +1,28 @@
+﻿<!--
+    This view is used for updating an existing song in the database.
+    Key Points:
+    - Form for updating song details.
+    - Sends data to the "UpdateSongToDatabase" action in SongsFrom1950Controller.
+-->
+@model SongsFrom1950
+
+<h2>Update @Model.Title</h2>
+
+@using (Html.BeginForm("UpdateSongToDatabase", "SongsFrom1950", FormMethod.Post))
+{
+    <input asp-for="ID" type="hidden" value="@Model.ID" />
+
+    <label asp-for="Title" class="control-label">Title</label>
+    <input type="text" name="Title" class="form-control" value="@Model.Title" />
+
+    <label asp-for="Artist" class="control-label">Artist</label>
+    <input type="text" name="Artist" class="form-control" value="@Model.Artist" />
+
+    <label asp-for="Genre" class="control-label">Genre</label>
+    <input type="text" name="Genre" class="form-control" value="@Model.Genre" />
+
+    <label asp-for="YearReleased" class="control-label">Year Released</label>
+    <input type="number" name="YearReleased" class="form-control" value="@Model.YearReleased" />
+
+    <input type="submit" value="Update Song" class="btn btn-primary" />
+}

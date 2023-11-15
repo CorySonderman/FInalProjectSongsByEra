@@ -1,8 +1,16 @@
-﻿@{
+﻿<!--
+    This view is the home page of the application.(Fist page/landing page)
+    Key Points:
+    - Includes links that retrieves data from MySql.
+    - Often time the Home Page will offer a breief description of the purposes and uses
+      of the site.  You can also set it up as a navigation bar to the rest of your site 
+      which is what I did
+-->
+@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+<div class="text-center" style="margin-top: 1.5in;"> <!--This allows me lower the links-->
+    <!-- Moved links to MySql from the header to the body and centered them-->
+    <a class="btn btn-primary" asp-area="" asp-controller="SongsFrom1950" asp-action="Index">Songs From The 50's</a>
 </div>

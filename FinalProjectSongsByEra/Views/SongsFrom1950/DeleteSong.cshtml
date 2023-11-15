@@ -1,0 +1,33 @@
+﻿<!--
+    This view is used for confirming the deletion of a song.
+    Key Points:
+    - Displays song details.
+    - Form to confirm deletion.
+    - Sends data to the "DeleteSongFromDatabase" action in SongsFrom1950Controller.
+-->
+@model SongsFrom1950
+<h2>Delete Song</h2>
+
+<p>Are you sure you want to delete the following song?</p>
+<dl class="row">
+    <dt class="col-sm-2">ID</dt>
+    <dd class="col-sm-10">@Model.ID</dd>
+
+    <dt class="col-sm-2">Title</dt>
+    <dd class="col-sm-10">@Model.Title</dd>
+
+    <dt class="col-sm-2">Artist</dt>
+    <dd class="col-sm-10">@Model.Artist</dd>
+
+    <dt class="col-sm-2">Genre</dt>
+    <dd class="col-sm-10">@Model.Genre</dd>
+
+    <dt class="col-sm-2">Year Released</dt>
+    <dd class="col-sm-10">@Model.YearReleased</dd>
+</dl>
+
+<form asp-action="DeleteSongFromDatabase" method="post">
+    <input type="hidden" asp-for="ID" />
+    <input type="submit" value="Delete" class="btn btn-danger" />
+    <a asp-action="Index">Back to List</a>
+</form>

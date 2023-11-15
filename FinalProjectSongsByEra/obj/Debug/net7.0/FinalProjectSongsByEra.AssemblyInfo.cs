@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FinalProjectSongsByEra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfe5de90495a92128f8d717ddb6d482b780b3d99")]
 [assembly: System.Reflection.AssemblyProductAttribute("FinalProjectSongsByEra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FinalProjectSongsByEra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

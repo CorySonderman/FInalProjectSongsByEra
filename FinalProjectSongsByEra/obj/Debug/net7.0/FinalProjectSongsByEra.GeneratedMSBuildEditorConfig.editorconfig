@@ -10,6 +10,8 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FinalProjectSongsByEra
 build_property.RootNamespace = FinalProjectSongsByEra
 build_property.ProjectDir = C:\Users\sonde\Desktop\repos\FinalProjectSongsByEra\FinalProjectSongsByEra\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
@@ -30,6 +32,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sonde/Desktop/repos/FinalProjectSongsByEra/FinalProjectSongsByEra/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sonde/Desktop/repos/FinalProjectSongsByEra/FinalProjectSongsByEra/Views/SongsFrom1950/CreateSong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29uZ3NGcm9tMTk1MFxDcmVhdGVTb25nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sonde/Desktop/repos/FinalProjectSongsByEra/FinalProjectSongsByEra/Views/SongsFrom1950/DeleteSong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29uZ3NGcm9tMTk1MFxEZWxldGVTb25nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sonde/Desktop/repos/FinalProjectSongsByEra/FinalProjectSongsByEra/Views/SongsFrom1950/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29uZ3NGcm9tMTk1MFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sonde/Desktop/repos/FinalProjectSongsByEra/FinalProjectSongsByEra/Views/SongsFrom1950/UpdateSong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29uZ3NGcm9tMTk1MFxVcGRhdGVTb25nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sonde/Desktop/repos/FinalProjectSongsByEra/FinalProjectSongsByEra/Views/SongsFrom1950/ViewSong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29uZ3NGcm9tMTk1MFxWaWV3U29uZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sonde/Desktop/repos/FinalProjectSongsByEra/FinalProjectSongsByEra/Views/_ViewImports.cshtml]
