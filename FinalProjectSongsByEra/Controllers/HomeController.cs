@@ -1,7 +1,5 @@
 ﻿using FinalProjectSongsByEra.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using Microsoft.Extensions.Logging;
 
 // This controller handles requests related to the home page and error handling.
 // Key Points:
@@ -15,27 +13,33 @@ namespace FinalProjectSongsByEra.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ISongRepository _repo;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ISongRepository repo)
         {
-            _logger = logger;
+            _repo = repo;
         }
 
+        //public IActionResult Index()
+        //{
+        //    // Get a list of table names you want to display links for
+        //    var tableNames = new List<string> { "songs_1950s", "songs_1960s", "songs_1970s", "songs_1980s", "songs_1990s", "songs_2000s", "songs_2010s"};
+
+        //    // Pass the list of table names to the view
+        //    return View(tableNames);
+        //}
+
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
         public IActionResult Index()
         {
-            return View();
+          
+            var tableNames = new List<string> { "songs_1950s", "songs_1960s", "songs_1970s", "songs_1980s", "songs_1990s", "songs_2000s", "songs_2010s" };
+
+            return View(tableNames);
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

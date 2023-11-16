@@ -4,7 +4,7 @@
     // Key Points:
     // - Properties for title, artist, genre, and year released.(It is important that these
     //   names match the names in your MySql columns.)
-    public class SongsFrom1950 : ISong
+    public class SongsFrom1990 : ISong
     {
         public int ID { get; set; }
         public string Title { get; set; }

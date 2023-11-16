@@ -4,7 +4,7 @@
     - Links to view, update, and delete each song.
     - Includes a link to create a new song.
 -->
-@model IEnumerable<SongsFrom1950>
+@model IEnumerable<ISong>
 
 <h2>Song</h2>
 <p><a asp-action="CreateSong">Create New Song</a></p>
@@ -20,14 +20,15 @@
     @foreach (var song in @Model)
     {
         <tr>
-            <td><a href=/SongsFrom1950/ViewSong/@song.ID>@song.ID</a></td>
+            <td><a asp-action="ViewSong" asp-route-id="@song.ID" asp-route-tableName="@($"songs_{song.YearReleased}s")">@song.ID</a></td>
             <td>@song.Title</td>
             <td>@song.Artist</td>
             <td>@song.Genre</td>
             <td>@song.YearReleased</td>
-            <td><a asp-action="DeleteSong" asp-route-id="@song.ID">Delete</a></td>
-            
+            <td>
+            <a asp-action="UpdateSong" asp-route-id="@song.ID" asp-route-decade="@song.YearReleased">Update</a> |
+            <a asp-action="DeleteSong" asp-route-id="@song.ID" asp-route-decade="@song.YearReleased">Delete</a>
+            </td>
         </tr>
     }
-
 </table>
